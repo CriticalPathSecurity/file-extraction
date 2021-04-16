@@ -7,6 +7,6 @@ module FileExtraction;
 
 hook FileExtraction::extract(f: fa_file, meta: fa_metadata) &priority=5
 	{
-	if ( meta$mime_type == "application/x-dosexec" && f$seen_bytes > 10 )
+	if ( meta$mime_type == "application/x-dosexec" && f$seen_bytes > 97 )
 		break;
 	}
